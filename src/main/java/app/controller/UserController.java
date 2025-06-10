@@ -1,5 +1,6 @@
 package app.controller;
 
+import app.dto.UserDTO;
 import app.model.User;
 import app.service.UserService;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ public class UserController {
     }
 
     @GetMapping
-    public List<User> getUsers() {
+    public List<UserDTO> getUsers() {
         return userService.getAllUsers();
     }
 
