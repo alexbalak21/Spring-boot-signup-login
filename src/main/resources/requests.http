@@ -10,3 +10,17 @@ Content-Type: application/json
   "username": "user 3",
   "password": "password 3"
 }
+
+### UPDATE USER
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "username": "new user 1",
+  "password": "new new password"
+}
+
+### DELETE
+
+DELETE http://localhost:8080/users/1
+
