@@ -1,0 +1,12 @@
+### GET ALL
+GET http://localhost:8080/users
+
+
+###POST USER
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "alex",
+  "password": "securepassword"
+}
